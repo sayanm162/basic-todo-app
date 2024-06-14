@@ -1,0 +1,128 @@
+/* Global styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+
+  /* Pad container styles */
+  
+  .pad-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form styles */
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #444;
+  }
+  
+  /* List styles */
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  .delete {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  .delete:hover {
+    background-color: #444;
+  }
+  
+  /* Responsive styles */
+  
+  /* Tablet and desktop styles */
+  
+  @media (min-width: 768px) {
+    .pad-container {
+      max-width: 800px;
+    }
+    form {
+      flex-direction: row;
+    }
+    label {
+      width: 30%;
+    }
+    input[type="text"] {
+      width: 90%;
+    }
+  }
+  
+  /* Mobile styles */
+  
+  @media (max-width: 767px) {
+    .pad-container {
+      max-width: 90%;
+    }
+    form {
+      flex-direction: column;
+    }
+    label {
+      width: 100%;
+    }
+    input[type="text"] {
+      width: 100%;
+    }
+    button[type="submit"] {
+      width: 100%;
+    }
+  }
